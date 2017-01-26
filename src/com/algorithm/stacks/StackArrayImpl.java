@@ -16,7 +16,7 @@ public class StackArrayImpl implements Stack {
 		this.top = -1;
 	}
 
-	@Override
+	 
 	public void push(int data) {
 		if(this.isStackFull() ==1){
 			System.out.println("stack full");
@@ -24,7 +24,7 @@ public class StackArrayImpl implements Stack {
 		this.stack[++top] = data;
 	}
 
-	@Override
+	 
 	public int pop() {
 		if (this.isEmpty() == 1) {
 			System.out.println("stack empty");
@@ -34,17 +34,17 @@ public class StackArrayImpl implements Stack {
 		return top;
 	}
 
-	@Override
+	 
 	public int top() {
 		return this.top;
 	}
 
-	@Override
+	 
 	public int size() {
 		return this.top + 1;
 	}
 
-	@Override
+	 
 	public int isEmpty() {
 		if (this.top > -1) {
 			return 0;
@@ -52,7 +52,7 @@ public class StackArrayImpl implements Stack {
 		return 1;
 	}
 
-	@Override
+	 
 	public int isStackFull() {
 		return this.stack.length == this.size() ? 1 : 0;
 	}
